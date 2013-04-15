@@ -1,0 +1,13 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.bar-sylizer{
+	color: white;
+}
+
+
+iframe{
+	border:30px solid black;
+	border-radius:10px;
+}
