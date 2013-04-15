@@ -11,3 +11,8 @@ iframe{
 	border:30px solid black;
 	border-radius:10px;
 }
+
+#pixel-slider {
+	width: 260px;
+	margin: 15px;
+}
