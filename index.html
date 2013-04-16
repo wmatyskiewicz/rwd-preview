@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery.ui.slider.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -22,17 +24,19 @@
                     </a>
                     <a class="brand" href="#">Responsive Design Viewer</a>
                     <div class="nav-collapse collapse bar-sylizer">
-                        <div class="select-device pull-right">
-                            device list
-                        </div>
-                        <div id="pixel-slider" class="pull-right">
-                            http://jqueryui.com/slider/#multiple-vertical
-                        </div>
+                        <form class="content-url pull-right">
+                            <input class="input-medium" name="content-url" value="http://www.w3schools.com" />
+                            <button>GO!</button>
+                        </form>
+                        <select id="select-device" class="pull-right">
+                            <option>---------</option>
+                        </select>
+                        <div id="pixel-slider" class="pull-right"></div>
                         <div class="content-size navbar-form pull-right">
                             Custom size:
-                            <input class="input-mini" id="content-width" name="content-width">
+                            <input class="input-mini" id="content-width" name="content-width" value="1024">
                             x:
-                            <input class="input-mini" id="content-height" name="content-width">
+                            <input class="input-mini" id="content-height" name="content-width" value="768">
                         </div>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -46,6 +50,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        <script src="js/vendor/jquery.ui.slider.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
